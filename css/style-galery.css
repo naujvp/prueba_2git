@@ -1,0 +1,67 @@
+body {
+    background-color: blue;
+    margin: 0;
+
+}
+.cabecera {
+background-color: aqua;
+}
+.centrado {
+    margin: 0 auto;
+    padding: 0 .8em;
+    transform: rotate(90);
+
+}
+
+.titulo {
+    margin: 0 0 1em;
+    padding: 1em 0;
+    font-weight: 400;
+    color: rgb(184, 120, 24);
+    /*text-align: center;*/
+    
+}
+
+@keyframes cambiarColor {
+    0% {color: red; font-size: small;}
+    100% {color: green; font-size: larger;}
+}
+
+figure {
+    margin: 0;
+}
+
+img {
+    display: block;
+    border: 0;
+    width: 100%;
+    height: auto;
+
+}
+.card {
+   /* color:rgb(29, 111, 211);*/
+    /*0text-decoration: none;*/
+    /*box-shadow: 3px 3px 0px hsl(0, 1%, 75%);*/
+    width: 33%;
+    margin-bottom: 1em;
+    background-color: aqua;
+
+}
+.cards {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+
+
+}
+.card-content {
+    font-size: 80%;
+    text-align: center;
+    border-bottom: brown;
+    border-style: dotted;
+    border-width: 0.1em;
+    animation-name: cambiarColor;
+    animation-duration: 10s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
